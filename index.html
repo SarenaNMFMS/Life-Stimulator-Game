@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Life Simulator</h1>
+        <div id="age-display">Age: 0</div>
+        
+        <div id="stats">
+            <div class="stat">
+                <div>Health</div>
+                <div class="stat-value" id="health">100</div>
+                <div class="progress-bar">
+                    <div class="progress" id="health-bar" style="width: 100%"></div>
+                </div>
+            </div>
+            <div class="stat">
+                <div>Happiness</div>
+                <div class="stat-value" id="happiness">100</div>
+                <div class="progress-bar">
+                    <div class="progress" id="happiness-bar" style="width: 100%"></div>
+                </div>
+            </div>
+            <div class="stat">
+                <div>Wealth</div>
+                <div class="stat-value" id="wealth">50</div>
+                <div class="progress-bar">
+                    <div class="progress" id="wealth-bar" style="width: 50%"></div>
+                </div>
+            </div>
+            <div class="stat">
+                <div>Intelligence</div>
+                <div class="stat-value" id="intelligence">50</div>
+                <div class="progress-bar">
+                    <div class="progress" id="intelligence-bar" style="width: 50%"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="event-display">
+            Welcome to the world! You are born. Make choices to shape your life.
+        </div>
+        
+        <div id="choices">
+            <!-- Choices will be added here by JavaScript -->
+        </div>
+        
+        <div id="game-over">
+            <h2>Game Over</h2>
+            <p id="death-reason"></p>
+            <p>You lived to <span id="final-age">0</span> years old.</p>
+            <button id="restart-btn">Start New Life</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
