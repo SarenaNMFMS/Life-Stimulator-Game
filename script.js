@@ -12,7 +12,7 @@ const state = {
             text: "You are born into the world. Your parents are excited to meet you.",
             choices: [
                 { text: "Cry loudly", health: 0, happiness: 5, wealth: 0, intelligence: 0, nextEvent: "infant_1" },
-                { text: "Sleep peacefully", health: 5, happiness: 0, wealth: 0, intelligence: 0, nextEvent: "infant_1" }
+                { text: "Sleep peacefully", health: -100, happiness: 0, wealth: 0, intelligence: 0, nextEvent: "infant_1" }
             ]
         },
         {
